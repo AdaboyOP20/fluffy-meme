@@ -35,6 +35,7 @@ canvas.parent('canvas');
 video = createCapture(VIDEO);
 video.size(700, 600);
 video.hide();
+video.parent('video');
 
 poseNet = ml5.poseNet(video, modelLoaded);
 poseNet.on('pose', gotPoses);
